@@ -2,56 +2,95 @@
 <html lang="ta">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>சித்தி விநாயகர் நண்பர்கள்</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>நிகழ்வுகள் - சித்தி விநாயகர் நண்பர்கள்</title>
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@700&display=swap" rel="stylesheet">
-<script>
-  function goToYear(year) {
-    // Redirect to the corresponding year page
-    window.location.href = year + ".html";
-  }
-</script>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
 
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    h1 {
+      color: #7b3f00;
+      margin-bottom: 1.5rem;
+    }
+
+    .year-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+
+    .year-link {
+      display: block;
+      padding: 1rem;
+      background-color: #ffd700;
+      color: #7b3f00;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .year-link:hover {
+      background-color: #e6c200;
+    }
+
+    footer {
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: #7b3f00;
+      color: #fff8f0;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
 
+  <!-- Header -->
   <header>
     <nav class="navbar">
       <div class="logo">சித்தி விநாயகர் நண்பர்கள்</div>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="index.html">முகப்பு</a></li>
+        <li><a href="explore.html">நிகழ்வுகள்</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section class="years-section">
-      <h2>ஆண்டு நிகழ்வுகள்</h2>
-      <div class="year-links">
-        <div class="year-links">
-  <div class="year-box" onclick="goToYear(2014)">2014</div>
-  <div class="year-box" onclick="goToYear(2015)">2015</div>
-  <div class="year-box" onclick="goToYear(2016)">2016</div>
-  <div class="year-box" onclick="goToYear(2017)">2017</div>
-  <div class="year-box" onclick="goToYear(2018)">2018</div>
-  <div class="year-box" onclick="goToYear(2019)">2019</div>
-  <div class="year-box" onclick="goToYear(2020)">2020</div>
-  <div class="year-box" onclick="goToYear(2021)">2021</div>
-  <div class="year-box" onclick="goToYear(2022)">2022</div>
-  <div class="year-box" onclick="goToYear(2023)">2023</div>
-  <div class="year-box" onclick="goToYear(2024)">2024</div>
-</div>
-    </section>
+  <!-- Main Content -->
+  <main class="container">
+    <h1>நிகழ்வுகள் ஆண்டு வாரியாக</h1>
+    <div class="year-grid">
+      <a href="2014.html" class="year-link">2014</a>
+      <a href="2015.html" class="year-link">2015</a>
+      <a href="2016.html" class="year-link">2016</a>
+      <a href="2017.html" class="year-link">2017</a>
+      <a href="2018.html" class="year-link">2018</a>
+      <a href="2019.html" class="year-link">2019</a>
+      <a href="2020.html" class="year-link">2020</a>
+      <a href="2021.html" class="year-link">2021</a>
+      <a href="2022.html" class="year-link">2022</a>
+      <a href="2023.html" class="year-link">2023</a>
+      <a href="2024.html" class="year-link">2024</a>
+    </div>
   </main>
-  
 
-
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 சித்தி விநாயகர் நண்பர்கள். All rights reserved.</p>
+    &copy; 2025 சித்தி விநாயகர் நண்பர்கள். அனைத்தும் உரிமையுள்ளது.
   </footer>
 
 </body>
