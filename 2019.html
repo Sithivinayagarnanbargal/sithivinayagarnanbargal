@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html lang="ta">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>சித்தி விநாயகர் நண்பர்கள் - 2019</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Mobile-friendly styles */
+    .event-content img {
+      width: 100%;
+      max-width: 400px;
+      margin: 1rem auto;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .event-content {
+      padding: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .logo {
+        position: static;
+        transform: none;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -13,28 +45,24 @@
     <nav class="navbar">
       <div class="logo">சித்தி விநாயகர் நண்பர்கள்</div>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="years.html">Events</a></li>
+        <li><a href="index.html">முகப்பு</a></li>
+        <li><a href="years.html">நிகழ்வுகள்</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Main Section -->
+  <!-- Main Content -->
   <main>
     <section id="event-content" class="event-content">
-      <h2>விநாயகர் சதுர்த்தி விழா - 2019</h2>
-      <img 
-        src="2019.jpg" 
-        alt="2019 Event Image" 
-        style="width: 80%; max-width: 300px; margin: 1rem auto; display: block; border-radius: 10px;" 
-      >
+      <h2 style="text-align: center;">விநாயகர் சதுர்த்தி விழா - 2019</h2>
+      <img src="images/2019-event.jpg" alt="2019 Event Image" />
       <p style="text-align: center; font-weight: bold;">
-        2019 இல் சித்தி விநாயகர் விழா சிறப்பாக நடைபெற்றது. இசை, நடனம் மற்றும் கலாசார நிகழ்ச்சிகள் அனைவரையும் கவர்ந்தன.
+        2019 இல் சித்தி விநாயகர் விழா சிறப்பாக நடைபெற்றது. இசை, நடனம், பஜனை மற்றும் விளையாட்டு நிகழ்ச்சிகள் மக்கள் மனதை கவர்ந்தன.
       </p>
     </section>
 
     <!-- Event Button -->
-    <div style="text-align:center; margin: 2rem 0;">
+    <div style="text-align: center; margin: 2rem 0;">
       <a href="years.html" class="event-button">🎉 நிகழ்வுகள் பார்க்க</a>
     </div>
   </main>
