@@ -1,44 +1,46 @@
-/* Reset styles */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Base styles */
+/* Base */
 body {
-  font-family: 'Georgia', serif;
+  font-family: 'Arial', sans-serif;
   background-color: #fff8f0;
-  color: #4b2e2e;
+  color: #333;
+  line-height: 1.6;
 }
 
 /* Navbar */
 .navbar {
-  background-color: #7b3f00; /* Deep brown-maroon */
+  background-color: #7b3f00;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  flex-wrap: wrap;
 }
 
 .logo {
-  font-size: 1.8rem;
-  color: #ffd700; /* Saffron gold */
+  font-size: 1.5rem;
   font-weight: bold;
-  font-family: 'Georgia', serif;
+  color: #ffd700;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .nav-links a {
   text-decoration: none;
   color: #ffeccc;
-  font-weight: 250;
+  font-weight: bold;
   transition: color 0.3s ease;
 }
 
@@ -49,181 +51,130 @@ body {
 /* Hero Section */
 .hero {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
   background: linear-gradient(rgba(123, 63, 0, 0.6), rgba(123, 63, 0, 0.6)),
-              url('https://source.unsplash.com/1600x900/?temple,spiritual') no-repeat center center/cover;
-  height: 3vh;
+              url('images/hero-bg.jpg') no-repeat center center / cover;
+  height: 80vh;
   color: #fffbe6;
-  padding: 10rem;
-}
-
-.hero-content {
-  max-width: 700px;
+  text-align: center;
+  padding: 2rem;
 }
 
 .hero h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #640404;
 }
 
 .hero p {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-  color: #fff8f0;
+  font-size: 1.2rem;
+  max-width: 600px;
 }
 
 .btn-primary {
-  padding: 1.10rem 1.80rem;
+  padding: 0.8rem 1.5rem;
   background-color: #ffd700;
   color: #7b3f00;
-  border: none;
-  text-decoration: none;
   font-weight: bold;
-  border-radius: 60px;
-  transition: background-color 0.9s;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 2rem;
+  display: inline-block;
+  transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
   background-color: #e6c200;
 }
 
-/* Features Section */
-.features {
-  padding: 0.1rem 2rem;
-  background-color: rgba(123, 63, 0, 0.6);
+/* Event Content */
+.event-content {
+  padding: 2rem;
+}
+
+.event-content img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 10px;
+}
+
+.event-content h2 {
   text-align: center;
-}
-
-.feature {
-  max-width: 600px;
-  margin: 2rem auto;
-}
-
-.feature h2 {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   color: #7b3f00;
 }
 
-.feature p {
-  font-size: 1.1rem;
-  color: #5c4033;
+.event-content p {
+  text-align: center;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Year Grid (for explore.html) */
+.year-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.year-link {
+  display: block;
+  padding: 1rem;
+  background-color: #ffd700;
+  color: #7b3f00;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.year-link:hover {
+  background-color: #e6c200;
 }
 
 /* Footer */
 footer {
   background-color: #7b3f00;
-  color: #ffeccc;
+  color: #fff8f0;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-}
-.navbar {
-  background-color: #7b3f00; /* Deep brown-maroon */
-  color: white;
-  display: flex;
-  justify-content: center; /* Center all content horizontally */
-  align-items: center;
-  padding: 2rem 3rem;
-  position: relative;
-}
-.logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 2rem;
-  color: #ffd700; /* Saffron gold */
-  font-weight: bold;
-  font-family: 'Noto Sans Tamil', 'Georgia', serif;
-  text-shadow: 1px 1px 3px #00000044;
-}
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  margin-left: auto;
-}
-img {
-  display: round;
-  max-width: 5%;
-  height: auto;
-  margin: 0 auto;
-  padding: 0rem 0;
-  background-color: #fff4e6;
-  border-top: 4px solid #e6c9a8;
-  border-bottom: 4px solid #e6c9a8;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-.vinayagar-section {
-  background-color: rgba(123, 63, 0, 0.6);
-  padding: 1rem 0;
-  text-align: center;
+  margin-top: 2rem;
 }
 
-.vinayagar-section img {
-  max-width: 20%;
-  height: auto;
-  border-radius: 6px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  border: 3px solid rgba(123, 63, 0, 0.6);
-}
+/* Responsive: Mobile Screens */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
 
-/* Years Section */
-.years-section {
-  background-color: #fff4e6;
-  padding: 4rem 2rem;
-  text-align: center;
-}
+  .nav-links {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
 
-.years-section h2 {
-  font-family: 'Noto Sans Tamil', serif;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #7b3f00;
-}
+  .hero h1 {
+    font-size: 1.8rem;
+  }
 
-.year-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
+  .hero p {
+    font-size: 1rem;
+  }
 
-.year-box {
-  background-color: #ffd700;
-  color: #7b3f00;
-  font-weight: bold;
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, background-color 0.3s;
-}
+  .event-content {
+    padding: 1rem;
+  }
 
-.year-box:hover {
-  background-color: #e6c200;
-  transform: translateY(-3px);
-  cursor: pointer;
-}
-.event-button {
-  display: inline-block;
-  padding: 0.2rem 1rem;
-  background-color: #7b3f00; /* Dark brown */
-  color: #ffeccc;            /* Light text */
-  font-weight: bold;
-  font-size: 1.1rem;
-  text-decoration: none;
-  border-radius: 8px;
-  margin: 2rem auto;
-  text-align: center;
-  transition: background-color 0.3s, transform 0.2s;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.event-button:hover {
-  background-color: #5c2e00; /* Darker on hover */
-  transform: scale(1.05);
+  .btn-primary {
+    width: 100%;
+    max-width: 300px;
+  }
 }
