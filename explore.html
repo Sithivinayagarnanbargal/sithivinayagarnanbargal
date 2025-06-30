@@ -11,21 +11,29 @@
     // Redirect to the corresponding year page
     window.location.href = year + ".html";
   }
+
+  function toggleMenu() {
+    const nav = document.getElementById("navLinks");
+    nav.classList.toggle("active");
+  }
 </script>
+
 
 </head>
 <body>
 
   <header>
     <nav class="navbar">
-      <div class="logo">சித்தி விநாயகர் நண்பர்கள்</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+  <div class="logo">சித்தி விநாயகர் நண்பர்கள்</div>
+  <div class="menu-icon" onclick="toggleMenu()">&#8942;</div> <!-- Three dots -->
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#">Events</a></li>
+    <li><a href="#">Gallery</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
   </header>
 
   <main>
