@@ -108,7 +108,7 @@ body {
   height: auto;
   border-radius: 6px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  border: 3px solid rgba(123, 63, 0, 0.6);
+  border: 0.7px solid rgba(123, 63, 0, 0.6);
 }
 
 /* Features Section */
