@@ -5,102 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>சித்தி விநாயகர் நண்பர்கள்</title>
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    /* Hide both by default */
-    .mobile-version, .desktop-version {
-      display: none;
-    }
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@700&display=swap" rel="stylesheet">
 
-    /* Show on mobile */
-    @media (max-width: 767px) {
-      .mobile-version {
-        display: block;
-      }
-    }
-
-    /* Show on desktop */
-    @media (min-width: 768px) {
-      .desktop-version {
-        display: block;
-      }
-    }
-  </style>
 </head>
 <body>
 
-  <!-- ✅ MOBILE VERSION -->
-  <div class="mobile-version">
-    <header>
-      <nav class="navbar">
-        <div class="logo">சித்தி விநாயகர் நண்பர்கள்</div>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+  <nav class="navbar">
+  <div class="logo">சித்தி விநாயகர் நண்பர்கள்</div>
 
-    <section class="vinayagar-section">
-      <img src="vinayagar.jpg.jpeg" alt="Lord Vinayagar">
+  <!-- Three dot menu icon -->
+  <div class="menu-icon" onclick="toggleMenu()">&#8942;</div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById("navLinks");
+    nav.classList.toggle("active");
+  }
+</script>
+
+  <section class="vinayagar-section">
+  <img src="vinayagar.jpg.jpeg" alt="Lord Vinayagar">
+</section>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>சிந்தையில் சுத்தி ! <br> 
+செயலில் வெற்றி ! 
+<br>சித்தி விநாயகரே போற்றி !!</h1>
+      <br><br>
+      <br><br>
+      <br>
+        <a href="explore.html" class="btn-primary">Explore More</a>
+      </div>
     </section>
 
-    <main>
-      <section class="hero">
-        <div class="hero-content">
-          <h1>சிந்தையில் சுத்தி ! <br> 
-          செயலில் வெற்றி ! 
-          <br>சித்தி விநாயகரே போற்றி !!</h1>
-          <a href="explore.html" class="btn-primary">Explore More</a>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2025 BrandName. All rights reserved.</p>
-    </footer>
-  </div>
-
-  <!-- ✅ DESKTOP VERSION -->
-  <div class="desktop-version">
-    <header>
-      <nav class="navbar">
-        <div class="logo">சித்தி விநாயகர் நண்பர்கள்</div>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <section class="vinayagar-section">
-      <img src="vinayagar.jpg.jpeg" alt="Lord Vinayagar">
+    <section class="features">
+      <div class="feature">
+        <h2></h2>
+        
+      </div>
+      <div class="feature">
+        <h2></h2>
+        
+      </div>
+      <div class="feature">
+        <h2></h2>
+        
+      </div>
     </section>
+  </main>
 
-    <main>
-      <section class="hero">
-        <div class="hero-content">
-          <h1>சிந்தையில் சுத்தி ! <br> 
-          செயலில் வெற்றி ! 
-          <br>சித்தி விநாயகரே போற்றி !!</h1>
-          <a href="explore.html" class="btn-primary">Explore More</a>
-        </div>
-      </section>
-
-      <section class="features">
-        <div class="feature"><h2></h2></div>
-        <div class="feature"><h2></h2></div>
-        <div class="feature"><h2></h2></div>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2025 BrandName. All rights reserved.</p>
-    </footer>
-  </div>
+  <footer>
+    <p>&copy; 2025 BrandName. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
