@@ -1,42 +1,37 @@
-/* -------------------
-   Reset & Base Styles
--------------------- */
+/* Reset styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Base styles */
 body {
   font-family: 'Georgia', serif;
   background-color: #fff8f0;
   color: #4b2e2e;
 }
 
-/* -------------------
-   Navbar
--------------------- */
+/* Navbar */
 .navbar {
-  background-color: #7b3f00;
+  background-color: #7b3f00; /* Deep brown-maroon */
   color: white;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   position: relative;
 }
 
 .logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   font-size: 1.8rem;
+  color: #ffd700; /* Saffron gold */
   font-weight: bold;
-  color: #ffd700;
-  font-family: 'Georgia', serif;
+  font-family: 'Noto Sans Tamil', 'Georgia', serif;
   text-shadow: 1px 1px 3px #00000044;
 }
 
+/* Nav links */
 .nav-links {
   list-style: none;
   display: flex;
@@ -44,37 +39,26 @@ body {
   margin-left: auto;
 }
 
-.nav-links a {
+.nav-links li a {
   text-decoration: none;
   color: #ffeccc;
-  font-weight: 500;
+  font-weight: bold;
   transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
+.nav-links li a:hover {
   color: #ffd700;
 }
 
-/* -------------------
-   Vinayagar Section
--------------------- */
-.vinayagar-section {
-  background-color: rgba(123, 63, 0, 0.6);
-  padding: 1rem 0;
-  text-align: center;
+/* Three-dot menu icon */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #ffd700;
 }
 
-.vinayagar-section img {
-  max-width: 40%;
-  height: auto;
-  border-radius: 6px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  border: 3px solid rgba(123, 63, 0, 0.6);
-}
-
-/* -------------------
-   Hero Section
--------------------- */
+/* Hero Section */
 .hero {
   display: flex;
   align-items: center;
@@ -82,9 +66,9 @@ body {
   text-align: center;
   background: linear-gradient(rgba(123, 63, 0, 0.6), rgba(123, 63, 0, 0.6)),
               url('https://source.unsplash.com/1600x900/?temple,spiritual') no-repeat center center/cover;
-  min-height: 40vh;
+  height: auto;
+  padding: 6rem 2rem;
   color: #fffbe6;
-  padding: 4rem 2rem;
 }
 
 .hero-content {
@@ -94,27 +78,40 @@ body {
 .hero h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #640404;
+  color: #ffd700;
 }
 
 .btn-primary {
   padding: 1rem 2rem;
   background-color: #ffd700;
   color: #7b3f00;
+  border: none;
   text-decoration: none;
   font-weight: bold;
   border-radius: 60px;
   transition: background-color 0.3s ease;
-  display: inline-block;
 }
 
 .btn-primary:hover {
   background-color: #e6c200;
 }
 
-/* -------------------
-   Features Section
--------------------- */
+/* Vinayagar Image Section */
+.vinayagar-section {
+  background-color: rgba(123, 63, 0, 0.6);
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.vinayagar-section img {
+  max-width: 20%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  border: 3px solid rgba(123, 63, 0, 0.6);
+}
+
+/* Features Section */
 .features {
   padding: 2rem;
   background-color: rgba(123, 63, 0, 0.1);
@@ -122,11 +119,13 @@ body {
 }
 
 .feature {
-  margin: 1rem 0;
+  max-width: 600px;
+  margin: 2rem auto;
 }
 
 .feature h2 {
   font-size: 1.8rem;
+  margin-bottom: 0.5rem;
   color: #7b3f00;
 }
 
@@ -135,9 +134,7 @@ body {
   color: #5c4033;
 }
 
-/* -------------------
-   Footer
--------------------- */
+/* Footer */
 footer {
   background-color: #7b3f00;
   color: #ffeccc;
@@ -146,26 +143,88 @@ footer {
   font-size: 0.9rem;
 }
 
-/* -------------------
-   Responsive Visibility
--------------------- */
-
-/* Hide both by default as fallback */
-.mobile-version,
-.desktop-version {
-  display: none;
+/* Year section (optional) */
+.years-section {
+  background-color: #fff4e6;
+  padding: 4rem 2rem;
+  text-align: center;
 }
 
-/* Show mobile content on small screens */
-@media (max-width: 767px) {
-  .mobile-version {
+.years-section h2 {
+  font-family: 'Noto Sans Tamil', serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #7b3f00;
+}
+
+.year-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.year-box {
+  background-color: #ffd700;
+  color: #7b3f00;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.year-box:hover {
+  background-color: #e6c200;
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+
+.event-button {
+  display: inline-block;
+  padding: 0.2rem 1rem;
+  background-color: #7b3f00;
+  color: #ffeccc;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  margin: 2rem auto;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.event-button:hover {
+  background-color: #5c2e00;
+  transform: scale(1.05);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .menu-icon {
     display: block;
   }
-}
 
-/* Show desktop content on large screens */
-@media (min-width: 768px) {
-  .desktop-version {
-    display: block;
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    background-color: #fff8f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 999;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
   }
 }
