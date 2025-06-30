@@ -106,9 +106,9 @@ body {
 .vinayagar-section img {
   max-width: 50%;
   height: auto;
-  border-radius: 6px;
+  border-radius: 2px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  border: 0.7px solid rgba(123, 63, 0, 0.6);
+  border: 1px solid rgba(123, 63, 0, 0.6);
 }
 
 /* Features Section */
